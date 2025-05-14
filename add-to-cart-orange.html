@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Zest - SipSehat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://static.wixstatic.com/media/78d9fc_34952818f44041d19aceb1fbdbfe0177~mv2.png/v1/fill/w_195,h_195,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/78d9fc_34952818f44041d19aceb1fbdbfe0177~mv2.png" alt="SipSehat Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="subscription.html">Subscription</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <div class="cart-icon">
+                <span class="cart-count">0</span>
+                🛒
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-detail">
+        <div class="cart-container">
+            <input type="checkbox" id="cart-toggle" class="cart-toggle" checked>
+            <label for="cart-toggle" class="cart-overlay"></label>
+            
+            <div class="cart-sidebar">
+                <div class="cart-header">
+                    <h2>Cart (1 item)</h2>
+                    <label for="cart-toggle" class="close-cart">✕</label>
+                </div>
+                
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img src="https://static.wixstatic.com/media/11062b_9a65c9088c9e4dd5998bc1a330df2a23~mv2.jpg" alt="Orange Zest">
+                        <div class="item-details">
+                            <h3>Orange Zest</h3>
+                            <p class="item-price">Rp10,000</p>
+                            <form class="quantity-form" action="update-cart.html" method="post">
+                                <button type="submit" name="decrease" value="1">−</button>
+                                <input type="number" name="quantity" value="1" min="1">
+                                <button type="submit" name="increase" value="1">+</button>
+                            </form>
+                        </div>
+                        <form class="remove-form" action="remove-item.html" method="post">
+                            <button type="submit" class="remove-item">🗑️</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="cart-footer">
+                    <div class="subtotal">
+                        <span>Subtotal</span>
+                        <span>Rp10,000</span>
+                    </div>
+                    <p class="tax-note">Taxes and shipping are calculated at checkout.</p>
+                    <form action="checkout-orange.html" method="get">
+                        <button type="submit" class="view-cart-button">View Cart</button>
+                    </form>
+                    <div class="secure-checkout">
+                        🔒 Secure Checkout
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kebijakan</h3>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>
+            <div class="footer-section">
+                <h3>Bantuan</h3>
+                <a href="#">Cookie Policy</a>
+                <a href="#">FAQ</a>
+                <a href="#">Payment Methods</a>
+            </div>
+            <div class="footer-section">
+                <h3>Alamat:</h3>
+                <p>Jl.tinumbu<br>lorong 149</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak:</h3>
+                <p>hello@sipsehat.com<br>+6282194694459</p>
+                <div class="social-icons">
+                    <a href="#">📘</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                    <a href="#">🎵</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 by SipSehat. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
