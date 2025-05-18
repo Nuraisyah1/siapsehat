@@ -212,7 +212,119 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .cart-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .shop-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+    }
+
+    .account-tabs {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .account-tabs a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-dots {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
     .shop-page {
         padding: 30px;
     }
