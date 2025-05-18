@@ -11,6 +11,8 @@
         <div class="logo">
             <img src="https://static.wixstatic.com/media/78d9fc_34952818f44041d19aceb1fbdbfe0177~mv2.png/v1/fill/w_195,h_195,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/78d9fc_34952818f44041d19aceb1fbdbfe0177~mv2.png" alt="SipSehat Logo">
         </div>
+        <button class="menu-toggle" onclick="toggleMenu()">⋮</button>
+        <div class="menu-overlay" onclick="toggleMenu()"></div>
         <nav>
             <a href="index.html">Home</a>
             <a href="shop.html">Shop</a>
@@ -74,5 +76,13 @@
 <input type="checkbox" id="nav-toggle">
 <label for="nav-toggle" class="menu-toggle"></label>
 <label for="menu-toggle" class="menu-button">⋮</label>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            const overlay = document.querySelector('.menu-overlay');
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
